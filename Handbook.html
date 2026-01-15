@@ -6,370 +6,219 @@
     <title>Developer Handbook – WebCore</title>
     <meta
       name="description"
-      content="Complete reference handbook for frontend developers covering HTML, CSS, Git, Linux, SEO and more."
+      content="Programming books and resources library for frontend developers"
     />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/handbook.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <img src="assets/main logo.png" alt="WebCore Logo" />
+    <main class="books-library">
+      <div class="library-container">
+        <div class="library-header">
+          <a href="index.html" class="home-btn">← Back to Home</a>
+          <h2>📖 Programming Books Library</h2>
+          <p>Click on any book to read the PDF</p>
         </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="html-basics.html">HTML</a>
-          <a href="git-github.html">Git</a>
-          <a href="linux-basics.html">Linux</a>
-          <a href="seo-accessibility.html">SEO</a>
-          <a href="about.html">About</a>
+
+        <div class="books-grid">
+          <a
+            href="Handbook Pdf/HTML5NotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="html"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+              "
+            ></div>
+            <div class="book-category">HTML</div>
+            <h3 class="book-title">HTML5: Notes beginner to advanced</h3>
+          </a>
+          <a
+            href="Handbook Pdf/HTML5CanvasNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="html"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+              "
+            ></div>
+            <div class="book-category">HTML</div>
+            <h3 class="book-title">HTML5: Canvas</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/CSSNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="css"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #4ecdc4 0%, #44a8b3 100%);
+              "
+            ></div>
+            <div class="book-category">CSS</div>
+            <h3 class="book-title">Modern CSS: The Complete Guide</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/JavaScriptNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="javascript"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #f9ca24 0%, #f0932b 100%);
+              "
+            ></div>
+            <div class="book-category">JavaScript</div>
+            <h3 class="book-title">JavaScript: The Complete Reference</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/GitNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="git"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #6c5ce7 0%, #5f3dc4 100%);
+              "
+            ></div>
+            <div class="book-category">Git</div>
+            <h3 class="book-title">Pro Git: Version Control Mastery</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/LinuxNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="linux"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+              "
+            ></div>
+            <div class="book-category">Linux</div>
+            <h3 class="book-title">Linux Command Line: A Complete Guide</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/ReactJSNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="react"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+              "
+            ></div>
+            <div class="book-category">React</div>
+            <h3 class="book-title">React js Notes</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/ReactNativeNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="react-native"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #00b894 0%, #00a86b 100%);
+              "
+            ></div>
+            <div class="book-category">React Native</div>
+            <h3 class="book-title">
+              React Native guide for Beginners to Advanced
+            </h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/JavaNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="java"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
+              "
+            ></div>
+            <div class="book-category">Java</div>
+            <h3 class="book-title">Java Notes for Professionals</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/SpringFrameworkNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="spring-framework"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #fab1a0 0%, #e17055 100%);
+              "
+            ></div>
+            <div class="book-category">Spring Framework</div>
+            <h3 class="book-title">Spring Framework Notes for Professionals</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/HibernateNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="hibernate"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+              "
+            ></div>
+            <div class="book-category">Hibernate</div>
+            <h3 class="book-title">Hibernate Notes for Professionals</h3>
+          </a>
+
+          <a
+            href="Handbook Pdf/MongoDBNotesForProfessionals.pdf"
+            target="_blank"
+            class="book-card"
+            data-category="mongodb"
+          >
+            <div
+              class="book-image"
+              style="
+                background: linear-gradient(135deg, #0984e3 0%, #2d3436 100%);
+              "
+            ></div>
+            <div class="book-category">MongoDB</div>
+            <h3 class="book-title">MongoDB Notes for Professionals</h3>
+          </a>
         </div>
       </div>
-    </nav>
+    </main>
 
-    <div class="handbook-container">
-      <aside class="handbook-sidebar">
-        <div class="sidebar-header">
-          <h3>📚 Handbook</h3>
-        </div>
-        <nav class="toc">
-          <ul>
-            <li><a href="#html-section" class="toc-link">HTML Guide</a></li>
-            <li><a href="#css-section" class="toc-link">CSS Guide</a></li>
-            <li>
-              <a href="#js-section" class="toc-link">JavaScript Basics</a>
-            </li>
-            <li><a href="#git-section" class="toc-link">Git Commands</a></li>
-            <li>
-              <a href="#linux-section" class="toc-link">Linux Commands</a>
-            </li>
-            <li>
-              <a href="#seo-section" class="toc-link">SEO Best Practices</a>
-            </li>
-            <li>
-              <a href="#accessibility-section" class="toc-link"
-                >Accessibility</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      <main class="handbook-content">
-        <div class="handbook-header">
-          <h1>📖 Developer Handbook</h1>
-          <p>
-            Your complete reference guide for frontend development fundamentals
-          </p>
-        </div>
-
-        <section id="html-section" class="handbook-section">
-          <div class="section-header">
-            <h2>🏗️ HTML Guide</h2>
-            <span class="section-badge">Markup Language</span>
-          </div>
-          <div class="section-content">
-            <div class="subsection">
-              <h3>Document Structure</h3>
-              <div class="code-block">
-                &lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt;
-                &lt;meta charset="UTF-8"&gt; &lt;title&gt;Page
-                Title&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Content
-                --&gt; &lt;/body&gt; &lt;/html&gt;
-              </div>
-            </div>
-
-            <div class="subsection">
-              <h3>Semantic Tags</h3>
-              <div class="reference-table">
-                <table>
-                  <tr>
-                    <th>Tag</th>
-                    <th>Purpose</th>
-                  </tr>
-                  <tr>
-                    <td>&lt;header&gt;</td>
-                    <td>Page or section header</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;nav&gt;</td>
-                    <td>Navigation links</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;main&gt;</td>
-                    <td>Main content</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;article&gt;</td>
-                    <td>Independent content</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;section&gt;</td>
-                    <td>Thematic grouping</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;footer&gt;</td>
-                    <td>Footer section</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <h3>Common Elements</h3>
-              <div class="reference-table">
-                <table>
-                  <tr>
-                    <th>Element</th>
-                    <th>Usage</th>
-                  </tr>
-                  <tr>
-                    <td>&lt;h1&gt; - &lt;h6&gt;</td>
-                    <td>Headings (h1 should be used once per page)</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Paragraphs</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;a href=""&gt;</td>
-                    <td>Hyperlinks</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;img src="" alt=""&gt;</td>
-                    <td>Images (always use alt text)</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;ul&gt;, &lt;ol&gt;</td>
-                    <td>Unordered and ordered lists</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;form&gt;</td>
-                    <td>User input forms</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="css-section" class="handbook-section">
-          <div class="section-header">
-            <h2>🎨 CSS Guide</h2>
-            <span class="section-badge">Styling</span>
-          </div>
-          <div class="section-content">
-            <div class="subsection">
-              <h3>Selectors</h3>
-              <div class="reference-table">
-                <table>
-                  <tr>
-                    <th>Selector</th>
-                    <th>Example</th>
-                    <th>Description</th>
-                  </tr>
-                  <tr>
-                    <td>Element</td>
-                    <td>p { }</td>
-                    <td>Selects all &lt;p&gt; tags</td>
-                  </tr>
-                  <tr>
-                    <td>Class</td>
-                    <td>.btn { }</td>
-                    <td>Selects elements with class "btn"</td>
-                  </tr>
-                  <tr>
-                    <td>ID</td>
-                    <td>#header { }</td>
-                    <td>Selects element with id "header"</td>
-                  </tr>
-                  <tr>
-                    <td>Attribute</td>
-                    <td>[type="text"] { }</td>
-                    <td>Selects by attribute value</td>
-                  </tr>
-                  <tr>
-                    <td>Pseudo-class</td>
-                    <td>a:hover { }</td>
-                    <td>Selects element in specific state</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <h3>Box Model</h3>
-              <div class="code-block">
-                * { margin: 0; /* Outside spacing */ padding: 0; /* Inside
-                spacing */ border: 1px; /* Border thickness */ box-sizing:
-                border-box; /* Include padding/border in width */ }
-              </div>
-            </div>
-
-            <div class="subsection">
-              <h3>Flexbox Layout</h3>
-              <div class="code-block">
-                .container { display: flex; justify-content: center; /*
-                Horizontal alignment */ align-items: center; /* Vertical
-                alignment */ gap: 20px; /* Space between items */ }
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="git-section" class="handbook-section">
-          <div class="section-header">
-            <h2>🔗 Git Commands</h2>
-            <span class="section-badge">Version Control</span>
-          </div>
-          <div class="section-content">
-            <div class="subsection">
-              <h3>Basic Commands</h3>
-              <div class="reference-table">
-                <table>
-                  <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                  </tr>
-                  <tr>
-                    <td>git init</td>
-                    <td>Initialize a new Git repository</td>
-                  </tr>
-                  <tr>
-                    <td>git clone &lt;url&gt;</td>
-                    <td>Clone a repository</td>
-                  </tr>
-                  <tr>
-                    <td>git status</td>
-                    <td>Show working tree status</td>
-                  </tr>
-                  <tr>
-                    <td>git add .</td>
-                    <td>Stage all changes</td>
-                  </tr>
-                  <tr>
-                    <td>git commit -m "msg"</td>
-                    <td>Commit changes with message</td>
-                  </tr>
-                  <tr>
-                    <td>git push origin main</td>
-                    <td>Push commits to remote</td>
-                  </tr>
-                  <tr>
-                    <td>git pull origin main</td>
-                    <td>Fetch and merge remote changes</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="linux-section" class="handbook-section">
-          <div class="section-header">
-            <h2>🐧 Linux Commands</h2>
-            <span class="section-badge">Command Line</span>
-          </div>
-          <div class="section-content">
-            <div class="subsection">
-              <h3>File & Directory Commands</h3>
-              <div class="reference-table">
-                <table>
-                  <tr>
-                    <th>Command</th>
-                    <th>Description</th>
-                  </tr>
-                  <tr>
-                    <td>ls</td>
-                    <td>List files and directories</td>
-                  </tr>
-                  <tr>
-                    <td>pwd</td>
-                    <td>Print working directory</td>
-                  </tr>
-                  <tr>
-                    <td>cd &lt;path&gt;</td>
-                    <td>Change directory</td>
-                  </tr>
-                  <tr>
-                    <td>mkdir &lt;name&gt;</td>
-                    <td>Create new directory</td>
-                  </tr>
-                  <tr>
-                    <td>touch &lt;file&gt;</td>
-                    <td>Create new file</td>
-                  </tr>
-                  <tr>
-                    <td>rm &lt;file&gt;</td>
-                    <td>Delete file</td>
-                  </tr>
-                  <tr>
-                    <td>cp &lt;src&gt; &lt;dst&gt;</td>
-                    <td>Copy file</td>
-                  </tr>
-                  <tr>
-                    <td>mv &lt;src&gt; &lt;dst&gt;</td>
-                    <td>Move or rename file</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="seo-section" class="handbook-section">
-          <div class="section-header">
-            <h2>🔍 SEO Best Practices</h2>
-            <span class="section-badge">Search Optimization</span>
-          </div>
-          <div class="section-content">
-            <div class="subsection">
-              <h3>Essential SEO Tips</h3>
-              <ul class="tips-list">
-                <li>
-                  ✅ Use descriptive &lt;title&gt; tags (50-60 characters)
-                </li>
-                <li>✅ Write meta descriptions (150-160 characters)</li>
-                <li>✅ Use only one &lt;h1&gt; per page</li>
-                <li>✅ Add alt text to all images</li>
-                <li>✅ Use semantic HTML tags</li>
-                <li>✅ Create mobile-friendly designs</li>
-                <li>✅ Optimize page speed</li>
-                <li>✅ Use descriptive URLs</li>
-                <li>✅ Include internal and external links</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section id="accessibility-section" class="handbook-section">
-          <div class="section-header">
-            <h2>♿ Accessibility Best Practices</h2>
-            <span class="section-badge">Inclusivity</span>
-          </div>
-          <div class="section-content">
-            <div class="subsection">
-              <h3>Accessibility Checklist</h3>
-              <ul class="tips-list">
-                <li>✅ Provide alt text for all images</li>
-                <li>✅ Use semantic HTML elements</li>
-                <li>✅ Ensure proper color contrast (4.5:1 for text)</li>
-                <li>✅ Make keyboard navigation possible</li>
-                <li>✅ Label form inputs clearly</li>
-                <li>✅ Use ARIA attributes where needed</li>
-                <li>✅ Test with screen readers</li>
-                <li>✅ Avoid auto-playing media</li>
-                <li>✅ Use descriptive link text</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <footer>
-      <p>© 2026 WebCore | Developer Handbook</p>
-    </footer>
+    <button id="scrollToTopBtn">↑</button>
+    <script src="js/scroll-to-top.js"></script>
   </body>
 </html>

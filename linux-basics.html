@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linux Basics - WebCore</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <img src="assets/main logo.png" alt="WebCore Logo" />
+          <a href="Handbook.html">
+            <img src="assets/main logo.png" alt="WebCore Logo" />
+          </a>
         </div>
         <div class="nav-links">
           <a href="index.html">Home</a>
@@ -18,7 +21,7 @@
           <a href="git-github.html">Git</a>
           <a href="linux-basics.html">Linux</a>
           <a href="seo-accessibility.html">SEO</a>
-          <a href="about.html">About</a>
+          <a href="interview-questions.html">Interview</a>
         </div>
       </div>
     </nav>
@@ -39,23 +42,116 @@
 
     <main class="content-section">
       <div class="content-container">
-        <h2>Why Linux?</h2>
-        <p>Linux is used in servers, cloud, DevOps and CI/CD.</p>
+        <main class="fade-in">
+          <section>
+            <h2>What is Linux?</h2>
+            <p>
+              Linux is an open-source operating system based on Unix. It is
+              widely used in servers, cloud platforms, DevOps, and CI/CD
+              environments. Most web servers run on Linux because it is stable,
+              secure, and free.
+            </p>
+          </section>
 
-        <h2>Basic Commands</h2>
-        <ul>
-          <li>ls – list files</li>
-          <li>cd – change directory</li>
-          <li>pwd – current path</li>
-          <li>mkdir – create folder</li>
-          <li>rm – delete file</li>
-        </ul>
+          <section>
+            <h2>Why Linux is Important for Developers?</h2>
+            <ul>
+              <li>Most production servers run on Linux</li>
+              <li>Used in cloud platforms like AWS, Azure, and GCP</li>
+              <li>Foundation of DevOps and CI/CD pipelines</li>
+              <li>Powerful command-line tools</li>
+              <li>Open-source and customizable</li>
+            </ul>
+          </section>
 
-        <img src="assets/images/linux-terminal.png" alt="Linux terminal">
+          <section>
+            <h2>Linux File System Structure</h2>
+            <p>
+              Linux follows a hierarchical file system structure. Everything in
+              Linux is treated as a file.
+            </p>
+
+            <ul>
+              <li><strong>/</strong> – Root directory</li>
+              <li><strong>/home</strong> – User home directories</li>
+              <li><strong>/bin</strong> – Essential system commands</li>
+              <li><strong>/etc</strong> – Configuration files</li>
+              <li><strong>/var</strong> – Logs and variable data</li>
+              <li><strong>/usr</strong> – User programs and utilities</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Basic Linux Commands</h2>
+            <ul>
+              <li><strong>ls</strong> – List files and directories</li>
+              <li><strong>pwd</strong> – Show current directory</li>
+              <li><strong>cd</strong> – Change directory</li>
+              <li><strong>mkdir</strong> – Create a directory</li>
+              <li><strong>touch</strong> – Create a file</li>
+              <li><strong>rm</strong> – Delete a file</li>
+              <li><strong>cp</strong> – Copy files</li>
+              <li><strong>mv</strong> – Move or rename files</li>
+              <li><strong>clear</strong> – Clear terminal screen</li>
+            </ul>
+          </section>
+          <img src="assets/ARC/linux.jpg" alt="Linux cmd" />
+
+          <section>
+            <h2>File Permissions in Linux</h2>
+            <p>
+              Linux uses permissions to control who can read, write, or execute
+              a file.
+            </p>
+
+            <ul>
+              <li><strong>r</strong> – Read</li>
+              <li><strong>w</strong> – Write</li>
+              <li><strong>x</strong> – Execute</li>
+            </ul>
+
+            <p>Permissions are assigned to:</p>
+            <ul>
+              <li>Owner</li>
+              <li>Group</li>
+              <li>Others</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Linux in Web Development</h2>
+            <p>
+              Linux is commonly used to host web applications. Web servers like
+              Apache and Nginx run on Linux systems. Developers often use Linux
+              commands while deploying websites and applications.
+            </p>
+          </section>
+
+          <section>
+            <h2>Linux in CI/CD</h2>
+            <p>
+              Most CI/CD pipelines run on Linux machines. Tools like GitHub
+              Actions, Jenkins, and Docker use Linux environments to build,
+              test, and deploy applications automatically.
+            </p>
+          </section>
+
+          <section>
+            <h2>Advantages of Linux</h2>
+            <ul>
+              <li>Free and open-source</li>
+              <li>Highly secure</li>
+              <li>Stable and reliable</li>
+              <li>Large community support</li>
+            </ul>
+          </section>
+        </main>
+
+        <img src="assets/ARC/linux.png" alt="Linux terminal" />
       </div>
     </main>
 
-    
-
+    <button id="scrollToTopBtn">↑</button>
+    <script src="js/scroll-to-top.js"></script>
   </body>
 </html>
