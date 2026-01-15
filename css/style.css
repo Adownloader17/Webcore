@@ -17,8 +17,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-  padding: 15px 0;
+  background: linear-gradient(135deg, #2975c1 0%, #34495e 100%);
+  height: 80px;
   z-index: 1000;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -28,6 +28,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +40,8 @@ body {
 }
 
 .nav-logo img {
-  height: 50px;
+  max-height: 89px;
+  height: auto;
   width: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -261,7 +263,7 @@ body {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 40px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -425,7 +427,7 @@ main {
 
 .welcome-content h2 {
   margin-top: 0;
-  font-size: 48px;
+  font-size: 68px;
   margin-bottom: 25px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -433,7 +435,7 @@ main {
 }
 
 .welcome-content p {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.8;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -753,4 +755,70 @@ footer {
     gap: 8px;
   }
 }
+.content-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
 
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content-container h2 {
+  font-size: 32px;
+  color: #2975c1;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #2975c1;
+  padding-bottom: 10px;
+}
+
+.content-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.content-container ul {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content-container li {
+  margin-bottom: 10px;
+}
+
+.content-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-container video {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.content-container pre {
+  background: #f5f5f5;
+  border-left: 4px solid #2975c1;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #333;
+  overflow-x: auto;
+  margin: 20px 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

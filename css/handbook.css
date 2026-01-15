@@ -1,0 +1,176 @@
+.handbook-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.handbook-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.handbook-header h1 {
+  font-size: 36px;
+  color: #2975c1;
+  margin: 0 0 10px 0;
+}
+
+.handbook-header p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* Book Card */
+.book-card {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book-header {
+  background: linear-gradient(135deg, #2975c1 0%, #34495e 100%);
+  padding: 20px;
+}
+
+.book-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.book-body {
+  padding: 25px;
+}
+
+.book-body h3 {
+  color: #2975c1;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.book-body h3:first-child {
+  margin-top: 0;
+}
+
+.book-body p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.book-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #555;
+}
+
+.book-body li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.book-body li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2975c1;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .handbook-content {
+    padding: 20px 15px;
+  }
+
+  .handbook-header h1 {
+    font-size: 28px;
+  }
+
+  .handbook-header p {
+    font-size: 14px;
+  }
+
+  .book-header h2 {
+    font-size: 20px;
+  }
+
+  .book-body {
+    padding: 18px;
+  }
+
+  .book-body h3 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .book-body p {
+    font-size: 14px;
+  }
+
+  .book-body li {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .handbook-content {
+    padding: 15px 10px;
+  }
+
+  .handbook-header {
+    padding: 20px 15px;
+  }
+
+  .handbook-header h1 {
+    font-size: 22px;
+  }
+
+  .handbook-header p {
+    font-size: 13px;
+  }
+
+  .book-card {
+    margin-bottom: 20px;
+  }
+
+  .book-header {
+    padding: 15px;
+  }
+
+  .book-header h2 {
+    font-size: 18px;
+  }
+
+  .book-body {
+    padding: 15px;
+  }
+
+  .book-body h3 {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+}
+

@@ -37,15 +37,166 @@
       </div>
     </section>
 
-    <main>
-      <section>
-        <h2>HTML Basics</h2>
-        <p>Learn the fundamentals of HTML and web structure.</p>
-      </section>
-    </main>
+    <main class="content-section">
+      <div class="content-container">
+        <h2>HTML Guide</h2>
 
-    <footer>
-      <p>© 2026 WebCore</p>
-    </footer>
+        <h3>What is HTML?</h3>
+        <p>
+          HTML (HyperText Markup Language) is a markup language used to
+          structure content on the web. It tells the browser what each part of
+          the content represents, such as headings, paragraphs, links, images,
+          and forms.
+        </p>
+
+        <h3>Why HTML is called a Markup Language?</h3>
+        <p>
+          HTML uses tags to mark up content. These tags describe the meaning and
+          structure of content rather than performing logic like programming
+          languages.
+        </p>
+
+        <h3>Basic Document Structure</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Content goes here
+  &lt;/body&gt;
+&lt;/html&gt;</pre
+        >
+
+        <h3>Semantic HTML Tags</h3>
+        <p>
+          Semantic tags clearly describe the purpose of the content they
+          contain. They improve readability, SEO, and accessibility.
+        </p>
+
+        <ul>
+          <li><strong>&lt;header&gt;</strong> – Page or section header</li>
+          <li><strong>&lt;nav&gt;</strong> – Navigation links</li>
+          <li><strong>&lt;main&gt;</strong> – Main content of the page</li>
+          <li><strong>&lt;section&gt;</strong> – Group of related content</li>
+          <li><strong>&lt;article&gt;</strong> – Independent content</li>
+          <li><strong>&lt;footer&gt;</strong> – Footer section</li>
+        </ul>
+
+        <h3>Common HTML Elements</h3>
+        <ul>
+          <li>
+            <strong>&lt;h1&gt; to &lt;h6&gt;</strong> – Headings (use one
+            &lt;h1&gt; per page)
+          </li>
+          <li><strong>&lt;p&gt;</strong> – Paragraph</li>
+          <li><strong>&lt;a href=""&gt;</strong> – Hyperlink</li>
+          <li>
+            <strong>&lt;img src="" alt=""&gt;</strong> – Image (alt is required)
+          </li>
+          <li><strong>&lt;ul&gt;, &lt;ol&gt;</strong> – Lists</li>
+          <li><strong>&lt;form&gt;</strong> – User input forms</li>
+        </ul>
+
+        <h3>Importance of HTML</h3>
+        <p>
+          HTML is the foundation of every website. Without HTML, CSS and
+          JavaScript cannot work. A strong understanding of HTML is essential
+          for frontend development.
+        </p>
+
+        <img src="assets/images/semantic-html.png" alt="Semantic HTML" />
+
+        <h2>CSS (Cascading Style Sheets)</h2>
+
+        <h3>What is CSS?</h3>
+        <p>
+          CSS is used to style and design web pages. It controls colors, fonts,
+          spacing, layout, and responsiveness.
+        </p>
+
+        <h3>Why CSS is Important?</h3>
+        <ul>
+          <li>Makes websites attractive</li>
+          <li>Improves user experience</li>
+          <li>Separates content from design</li>
+        </ul>
+
+        <h3>CSS Syntax</h3>
+        <pre>
+selector {
+  property: value;
+}</pre
+        >
+
+        <h3>Types of CSS</h3>
+        <ul>
+          <li>Inline CSS</li>
+          <li>Internal CSS</li>
+          <li>External CSS</li>
+        </ul>
+
+        <h3>Common CSS Selectors</h3>
+        <ul>
+          <li>Element selector</li>
+          <li>Class selector (.class)</li>
+          <li>ID selector (#id)</li>
+          <li>Attribute selector</li>
+          <li>Pseudo-classes (:hover)</li>
+        </ul>
+
+        <h3>CSS Box Model</h3>
+        <p>The box model consists of margin, border, padding, and content.</p>
+
+        <h3>Layout Techniques</h3>
+        <ul>
+          <li>Flexbox</li>
+          <li>Grid</li>
+        </ul>
+
+        <h2>JavaScript</h2>
+
+        <h3>What is JavaScript?</h3>
+        <p>
+          JavaScript is a programming language used to make websites
+          interactive. It allows dynamic behavior like form validation,
+          animations, and API calls.
+        </p>
+
+        <h3>Why JavaScript is Important?</h3>
+        <ul>
+          <li>Adds interactivity to websites</li>
+          <li>Handles user actions</li>
+          <li>Used in frontend and backend</li>
+        </ul>
+
+        <h3>Basic JavaScript Example</h3>
+        <pre>
+&lt;script&gt;
+  alert("Hello World");
+&lt;/script&gt;</pre
+        >
+
+        <h3>What JavaScript Can Do?</h3>
+        <ul>
+          <li>Manipulate HTML and CSS</li>
+          <li>Handle events (click, submit)</li>
+          <li>Validate forms</li>
+          <li>Fetch data from servers</li>
+        </ul>
+
+        <h3>JavaScript in Web Development</h3>
+        <p>
+          JavaScript works with HTML and CSS to create modern web applications.
+          Frameworks like React and Vue are built using JavaScript.
+        </p>
+
+        <video controls>
+          <source src="assets/videos/html-intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </main>
   </body>
 </html>
