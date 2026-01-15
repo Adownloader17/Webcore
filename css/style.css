@@ -13,14 +13,15 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
-  background: transparent;
-  padding: 20px 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  padding: 15px 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -38,7 +39,7 @@ body {
 }
 
 .nav-logo img {
-  height: 80px;
+  height: 50px;
   width: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -63,23 +64,25 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .nav-links a {
-  color: #ddd;
+  color: #ecf0f1;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.3s ease;
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-links a:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  color: #00bcd4;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-links a::after {
@@ -140,6 +143,7 @@ body {
   opacity: 0.6;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  filter: grayscale(100%);
 }
 
 .logo1 {
@@ -233,6 +237,18 @@ body {
   letter-spacing: 8px;
   text-transform: uppercase;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  animation: titleAnimation 3s ease-in-out infinite;
+}
+
+@keyframes titleAnimation {
+  0%, 100% {
+    letter-spacing: 8px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    letter-spacing: 12px;
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 255, 255, 0.3);
+  }
 }
 
 .hero-subtitle {
@@ -309,19 +325,119 @@ body {
 }
 
 main {
-  padding: 60px 12%;
+  padding: 0;
   background: #fff;
 }
 
-main h2 {
-  margin-top: 0;
-  font-size: 32px;
-  margin-bottom: 15px;
+.welcome-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 12%;
+  background-image: url("../assets/parallax 2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-main p {
-  font-size: 16px;
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.85), rgba(156, 39, 176, 0.85));
+  z-index: 1;
+}
+
+.welcome-floating-logos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.welcome-logo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  opacity: 0.6;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  filter: grayscale(100%);
+}
+
+.wlogo1 {
+  top: 25%;
+  left: 15%;
+  animation: floatDown 4s infinite;
+  animation-delay: 0s;
+}
+
+.wlogo2 {
+  top: 30%;
+  right: 18%;
+  animation: floatDown 5s infinite;
+  animation-delay: 0.5s;
+}
+
+.wlogo3 {
+  top: 55%;
+  left: 12%;
+  animation: floatDown 4.5s infinite;
+  animation-delay: 1s;
+}
+
+.wlogo4 {
+  top: 60%;
+  right: 10%;
+  animation: floatDown 5.5s infinite;
+  animation-delay: 1.5s;
+}
+
+.wlogo5 {
+  top: 35%;
+  right: 35%;
+  animation: floatDown 4.8s infinite;
+  animation-delay: 0.8s;
+}
+
+.wlogo6 {
+  top: 55%;
+  left: 35%;
+  animation: floatDown 5.2s infinite;
+  animation-delay: 1.2s;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  text-align: center;
+  color: #fff;
+}
+
+.welcome-content h2 {
+  margin-top: 0;
+  font-size: 48px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-content p {
+  font-size: 18px;
   line-height: 1.8;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 300;
 }
 
 footer {
@@ -368,7 +484,273 @@ footer {
     bottom: 30px;
   }
   
-  main {
-    padding: 40px 8%;
+  .welcome-section {
+    padding: 60px 8%;
+    background-attachment: scroll;
+    min-height: 80vh;
+  }
+  
+  .welcome-content h2 {
+    font-size: 32px;
+  }
+  
+  .welcome-content p {
+    font-size: 16px;
+  }
+  
+  .welcome-logo {
+    width: 50px;
+    height: 50px;
   }
 }
+.footer {
+  background: linear-gradient(135deg, #5358bc 0%, #1a1a1a 100%);
+  color: #aaa;
+  padding: 60px 0 0 0;
+  font-size: 14px;
+  border-top: 2px solid rgba(0, 188, 212, 0.3);
+}
+
+.footer-top {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: 60px;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
+.footer-logo h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00bcd4, #9c27b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #888;
+  font-weight: 300;
+}
+
+.footer-tech-section h5 {
+  margin: 0 0 15px 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badges span {
+  background: rgba(0, 188, 212, 0.1);
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  color: #00bcd4;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-badges span:hover {
+  background: rgba(0, 188, 212, 0.2);
+  border-color: #00bcd4;
+  color: #fff;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-column h4 {
+  margin: 0 0 20px 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column ul li {
+  margin: 0;
+}
+
+.footer-column ul a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.footer-column ul a:hover {
+  color: #00bcd4;
+}
+
+.footer-column ul span {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  margin: 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #aaa;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  border-radius: 50%;
+}
+
+.footer-social a:hover {
+  color: #00bcd4;
+  background: rgba(0, 188, 212, 0.2);
+  border-color: #00bcd4;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    padding: 30px 20px;
+  }
+
+  .footer-bottom {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    gap: 15px;
+  }
+
+  .footer-logo img {
+    height: 50px;
+  }
+
+  .footer-logo h3 {
+    font-size: 20px;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 11px;
+  }
+
+  .footer-column ul a {
+    font-size: 12px;
+  }
+
+  .footer-tech-section h5 {
+    font-size: 12px;
+  }
+
+  .tech-badges span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    padding: 20px 15px;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+  }
+
+  .tech-badges {
+    gap: 8px;
+  }
+}
+
